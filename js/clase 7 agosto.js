@@ -17,7 +17,7 @@ let lista_compras = ["Yerba","Arroz","Harina","Azucar","Fideos"] //para crear un
 lista_compras.push("Lavandina") //me permite agregar un elemento AL FINAL del Array. Para esto, escribimos el elemento dentro del parentesis
 lista_compras
 
-lista_compras.unshift("Tomates")
+lista_compras.unshift("Tomates") //agregar AL PRINCIPIO DEL ARRAY
 lista_compras
 
 //*Quitar elementos:
