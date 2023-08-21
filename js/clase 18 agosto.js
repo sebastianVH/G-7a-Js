@@ -95,9 +95,12 @@ num_multiplicados
 
 
 //*Fill(): completa un array con determinados elementos. MODIFICA EL ARRAY ORIGINAL
+//Primer parametro: caracter a utilizar
+//Segundo parametro: indice de inicio
+//Tercer parametro: cantidad de posiciones a reemplazar (SIEMPRE SE CUENTA DEL 0)
 numeros.fill(0,2,4)
 numeros
 
-const mi_array = Array(10)
+const mi_array = new Array(10)
 mi_array.fill(9)
 

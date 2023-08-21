@@ -1,0 +1,95 @@
+//* Condicional: segun lo ocurrido en el codigo, se evaluara una expresion BOOLEANA (verdadero o falso). Segun el resultado de esta expresion, es lo que ocurrira con el codigo.
+
+//* Se utiliza la sentencia IF, que es lo que nos permite EVALUAR UNA SENTENCIA
+
+/*
+if (*condicion a evaluar*){
+    codigo a ejecutar en caso que la expresion sea VERDADERA
+}
+*/
+
+/**Operadores Booleanos: nos permiten evaluar sentencias de manera comparativa
+
+== (igual a)
+!= (diferente a)
+=== (igual en tipo y dato a)
+!== (diferente en tipo y dato)
+
+> (mayor)
+>= (mayor o igual)
+< (menor)
+<= (menor o igual)
+
+  */ 
+
+let interruptor = "On"
+
+if (interruptor == "Off"){
+    console.log("la lamparita esta encendida");
+}
+
+//En este ejemplo, el usuario debe tener 18 o mas para crear una cuenta
+
+let edad = 18
+
+if (edad >= 18){
+    console.log("Puede crear la cuenta");
+}
+
+//* Si bien un caso puede ser verdadero, tambien puede ser falso, e incluso tambien tal vez querramos ejecutar un codigo en caso que nuestra primer validacion no nos de verdadera!! Para eso, crearemos una sentencia llamada ELSE, que nos permite ejecutar ese codigo en caso de que todas las validaciones anteriores sean falsan. El ELSE se ejecuta SI O SI, en esos casos.
+
+
+//En este ejemplo vamos a ejecutar un mensaje que diga "Su edad no permite crear una cuenta"
+
+// let edad = 18
+
+if (edad >= 18 ){
+    console.log("Puede crear la cuenta");
+} else {
+    console.log("Su edad no permite crear una cuenta");
+}
+
+//Puede haber casos en el que se ejecuten MULTIPLES validaciones: es decir, dependiendo la validacion, es lo que se ejecutara
+//para evaluar mas de un caso, utilizaremos la sentencia ELSE IF
+
+//*En este ejemplo, los alumnos con mas de 7 de nota, promocionan la materia. los que tengan entre 6 y 4, deben rendir un final, y los que tengan menos de 4, deben recursar la materia
+
+let nota = 5
+
+//Conectores logicos:
+
+//AND => && (todas las sentencias deben ser VERDADERAS, para que la validacion sea VERDADERA)
+//OR => || (al menos UNA sentencia debe ser verdadera para que nuestra validacion sea VERDADERA)
+//NOT => ! (lo contrario a la validacion que hagamos. Si es verdadero, lo transforma en falso y viceversa)
+
+//! cuando se encuentra una sentencia que da como VERDADERA, el resto del codigo NO SE EJECUTA
+if ( nota < 4){
+    console.log("Debe recursar la materia");
+} else if (nota >= 4 && nota <= 6){
+    console.log("Debe rendir el final");
+} else if (nota >= 7){
+    console.log("Promociono la materia");
+}
+
+//! Si el usuario ingresa mal su username o password, el sistema no lo deja ingresar
+
+let username = "SebaGlobal"
+let password = "global"
+
+if (username != "SebaGlobal" || password != "global2023"){
+    console.log("acceso no permitido");
+}
+
+//homework: En una telefonica , se ingresa al sistema de recepcion de mensajes: el usuario debe ingresar un numero: Si ese numero es el 1, le pondra un console log de ("Enviando mensaje a Sistemas"), si es el 2 el mensaje sera ("Enviando mensaje a contaduria"), si es el 3, ("Enviando mensaje a Ventas"), y si es otro numero ("Enviando mensaje a Recepcion")
+
+let opcion = //completar con el numero
+
+if(/*condicion para el 1*/){
+    // mensaje del 1
+} /* condicion del 2*/ {
+    // mensaje del 2 
+} /* condicion del 3*/{
+    //mensaje del 3
+} /* cualquier otro numero */{
+    //mensaje de otro numero
+}
