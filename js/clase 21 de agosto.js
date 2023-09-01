@@ -82,14 +82,18 @@ if (username != "SebaGlobal" || password != "global2023"){
 
 //homework: En una telefonica , se ingresa al sistema de recepcion de mensajes: el usuario debe ingresar un numero: Si ese numero es el 1, le pondra un console log de ("Enviando mensaje a Sistemas"), si es el 2 el mensaje sera ("Enviando mensaje a contaduria"), si es el 3, ("Enviando mensaje a Ventas"), y si es otro numero ("Enviando mensaje a Recepcion")
 
-let opcion = //completar con el numero
+let opcion = 1 //completar con el numero
 
-if(/*condicion para el 1*/){
-    // mensaje del 1
-} /* condicion del 2*/ {
-    // mensaje del 2 
-} /* condicion del 3*/{
-    //mensaje del 3
-} /* cualquier otro numero */{
-    //mensaje de otro numero
+if(opcion === 1)
+{
+    console.log("Enviando mensaje a Sistemas");
+} else if (opcion === 2)
+{
+    console.log("Enviando mensaje a contaduria"); 
+} else if (opcion === 3)
+{
+    console.log("Enviando mensaje a Ventas");
+} else 
+{
+    console.log("Enviando mensaje a Recepcion");
 }
