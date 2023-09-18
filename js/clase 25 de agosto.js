@@ -16,7 +16,7 @@
                     // }
                     
 //*Dentro de la sentencia del switch, pondremos la variable a EVALUAR
-const depto = 1
+const depto = 4
 
 switch (depto){
     case 1: //*el CASE funciona como un IF-ELSE IF
@@ -87,4 +87,3 @@ while (contador < 3) {
     console.log("se ejecuto el bucle");
     contador++
 }
-
